@@ -1,0 +1,26 @@
+#
+#
+#logging.file: logs/application.log
+#logging:
+#  level:
+#      org:
+#        springframework:
+#          web: DEBUG
+#        hibernate: ERROR
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-wz9g00250r96flyq8ro.mysql.rds.aliyuncs.com/demo
+    username: root
+    password:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+
